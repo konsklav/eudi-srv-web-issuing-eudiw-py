@@ -82,6 +82,15 @@ class ConfService:
     form_expiry = 60
 
     # ------------------------------------------------------------------------------------------------
+    # Academic ID namespace
+    ac_id_namespace = "eu.europa.ec.eudi.greek_academic_id.1"
+
+    # Academic ID validity in days
+    ac_id_validity = 90
+
+    # Academic ID issuing Authority
+    ac_id_issuing_authority = "Test Academic ID issuer"
+
     # PID namespace
     pid_namespace = "eu.europa.ec.eudi.pid.1"
 
@@ -251,6 +260,13 @@ class ConfService:
     }
 
     config_doctype = {
+        "eu.europa.ec.eudi.greek_academic_id.1": {
+            "issuing_authority": ac_id_issuing_authority,
+            "organization_id": pid_organization_id,
+            "validity": ac_id_validity,
+            "organization_name": ac_id_issuing_authority,
+            "namespace": ac_id_namespace,
+        },
         "eu.europa.ec.eudi.pid.1": {
             "issuing_authority": pid_issuing_authority,
             "organization_id": pid_organization_id,
@@ -379,6 +395,7 @@ class ConfService:
             "eu.europa.ec.eudi.msisdn_mdoc",
         ],
         "country_selection": [
+            "eu.europa.ec.eudi.greek_academic_id_mdoc",
             "eu.europa.ec.eudi.loyalty_mdoc",
             "eu.europa.ec.eudi.mdl_mdoc",
             "eu.europa.ec.eudi.pid_jwt_vc_json",

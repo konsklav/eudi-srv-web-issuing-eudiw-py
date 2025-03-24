@@ -34,8 +34,8 @@ class ConfService:
     # ------------------------------------------------------------------------------------------------
     # PID issuer service URL
     # service_url = "https://preprod.issuer.eudiw.dev:4443/"
-    service_url = os.getenv("SERVICE_URL", "https://issuer.eudiw.dev/")
-    # service_url = "https://127.0.0.1:5000/"
+    # service_url = os.getenv("SERVICE_URL", "https://issuer.eudiw.dev/")
+    service_url = "https://127.0.0.1:5000/"
     # service_url = os.getenv("SERVICE_URL","https://dev.issuer.eudiw.dev/")
 
     wallet_test_url = "https://tester.issuer.eudiw.dev/"
@@ -43,7 +43,7 @@ class ConfService:
     revocation_service_url = "https://issuer.eudiw.dev/token_status_list/take"
 
     # ---------------------------------------------------------------------------
-    trusted_CAs_path = "/etc/eudiw/pid-issuer/cert/"
+    trusted_CAs_path = "/etc/eudiw/academic-id-test-issuer/cert/"
 
     # ------------------------------------------------------------------------------------------------
     # eIDAS Node base href (used in lightrequest)

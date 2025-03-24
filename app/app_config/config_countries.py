@@ -64,6 +64,7 @@ class ConfCountries:
             # "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/hackathon-DS-0001_UT_cert.der",
             "un_distinguishing_sign": "FC",
             "supported_credentials": [
+                "eu.europa.ec.eudi.greek_academic_id_mdoc",
                 "eu.europa.ec.eudi.pid_mdoc",
                 "eu.europa.ec.eudi.pid_jwt_vc_json",
                 "eu.europa.ec.eudi.mdl_mdoc",

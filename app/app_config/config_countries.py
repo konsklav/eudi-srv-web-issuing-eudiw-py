@@ -57,7 +57,7 @@ class ConfCountries:
             "name": "FormEU",
             "pid_url": cfgserv.service_url + "pid/form",
             # "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privKey/PID-DS-0001_UT.pem",
-            "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privKeys/PID-DS-0002-decrypted.key.pem",
+            "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privKey/PID-DS-0002-decrypted.key.pem",
             # "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privKey/hackathon-DS-0001_UT.pem",
             # "pid_mdoc_privkey": 'app\certs\PID-DS-0001_UT.pem',
             "pid_mdoc_privkey_passwd": None,  # None or bytes

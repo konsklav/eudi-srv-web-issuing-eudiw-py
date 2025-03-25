@@ -78,13 +78,13 @@
     "code_challenge_methods_supported": [
         "S256"
     ],
-    "issuer": "https://issuer.eudiw.dev",
-    "registration_endpoint": "https://issuer.eudiw.dev/registration",
-    "introspection_endpoint": "https://issuer.eudiw.dev/introspection",
-    "authorization_endpoint": "https://issuer.eudiw.dev/authorizationV3",
-    "token_endpoint": "https://issuer.eudiw.dev/token",
-    "userinfo_endpoint": "https://issuer.eudiw.dev/userinfo",
-    "end_session_endpoint": "https://issuer.eudiw.dev/session",
-    "pushed_authorization_request_endpoint": "https://issuer.eudiw.dev/pushed_authorizationv2",
-    "credential_endpoint": "https://issuer.eudiw.dev/credential"
+    "issuer": "http://localhost:5000",
+    "registration_endpoint": "http://localhost:5000/registration",
+    "introspection_endpoint": "http://localhost:5000/introspection",
+    "authorization_endpoint": "http://localhost:5000/authorizationV3",
+    "token_endpoint": "http://localhost:5000/token",
+    "userinfo_endpoint": "http://localhost:5000/userinfo",
+    "end_session_endpoint": "http://localhost:5000/session",
+    "pushed_authorization_request_endpoint": "http://localhost:5000/pushed_authorizationv2",
+    "credential_endpoint": "http://localhost:5000/credential"
 }

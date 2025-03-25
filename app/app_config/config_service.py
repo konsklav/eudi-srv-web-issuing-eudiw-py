@@ -43,7 +43,7 @@ class ConfService:
     revocation_service_url = "https://issuer.eudiw.dev/token_status_list/take"
 
     # ---------------------------------------------------------------------------
-    trusted_CAs_path = "/etc/eudiw/academic-id-test-issuer/cert/"
+    trusted_CAs_path = "/etc/eudiw/pid-issuer/cert/"
 
     # ------------------------------------------------------------------------------------------------
     # eIDAS Node base href (used in lightrequest)

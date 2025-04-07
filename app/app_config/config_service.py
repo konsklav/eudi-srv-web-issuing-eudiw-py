@@ -262,10 +262,10 @@ class ConfService:
 
     config_doctype = {
         "eu.europa.ec.eudi.greek_academic_id.1": {
-            "issuing_authority": pid_issuing_authority, #ac_id_issuing_authority,
+            "issuing_authority": ac_id_issuing_authority,
             "organization_id": pid_organization_id,
             "validity": ac_id_validity,
-            "organization_name": pid_issuing_authority, #ac_id_issuing_authority,
+            "organization_name": ac_id_issuing_authority,
             "namespace": ac_id_namespace,
         },
         "eu.europa.ec.eudi.pid.1": {

@@ -78,13 +78,13 @@
     "code_challenge_methods_supported": [
         "S256"
     ],
-    "issuer": "https://localhost:5000",
-    "registration_endpoint": "https://localhost:5000/registration",
-    "introspection_endpoint": "https://localhost:5000/introspection",
-    "authorization_endpoint": "https://localhost:5000/authorizationV3",
-    "token_endpoint": "https://localhost:5000/token",
-    "userinfo_endpoint": "https://localhost:5000/userinfo",
-    "end_session_endpoint": "https://localhost:5000/session",
-    "pushed_authorization_request_endpoint": "https://localhost:5000/pushed_authorizationv2",
-    "credential_endpoint": "https://localhost:5000/credential"
+    "issuer": "https://similarly-up-raven.ngrok-free.app",
+    "registration_endpoint": "https://similarly-up-raven.ngrok-free.app/registration",
+    "introspection_endpoint": "https://similarly-up-raven.ngrok-free.app/introspection",
+    "authorization_endpoint": "https://similarly-up-raven.ngrok-free.app/authorizationV3",
+    "token_endpoint": "https://similarly-up-raven.ngrok-free.app/token",
+    "userinfo_endpoint": "https://similarly-up-raven.ngrok-free.app/userinfo",
+    "end_session_endpoint": "https://similarly-up-raven.ngrok-free.app/session",
+    "pushed_authorization_request_endpoint": "https://similarly-up-raven.ngrok-free.app/pushed_authorizationv2",
+    "credential_endpoint": "https://similarly-up-raven.ngrok-free.app/credential"
 }

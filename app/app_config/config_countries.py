@@ -56,14 +56,17 @@ class ConfCountries:
         formCountry: {
             "name": "FormEU",
             "pid_url": cfgserv.service_url + "pid/form",
-            "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privKey/PID-DS-0001_UT.pem",
+            # "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privKey/PID-DS-0001_UT.pem",
+            "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privKey/PID-DS-0002-decrypted.key.pem",
             # "pid_mdoc_privkey": "/etc/eudiw/pid-issuer/privKey/hackathon-DS-0001_UT.pem",
             # "pid_mdoc_privkey": 'app\certs\PID-DS-0001_UT.pem',
             "pid_mdoc_privkey_passwd": None,  # None or bytes
-            "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/PID-DS-0001_UT_cert.der",
+            # "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/PID-DS-0001_UT_cert.der",
+            "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/PID-DS-0002.cert.der",
             # "pid_mdoc_cert": "/etc/eudiw/pid-issuer/cert/hackathon-DS-0001_UT_cert.der",
             "un_distinguishing_sign": "FC",
             "supported_credentials": [
+                "eu.europa.ec.eudi.greek_academic_id_mdoc",
                 "eu.europa.ec.eudi.pid_mdoc",
                 "eu.europa.ec.eudi.pid_jwt_vc_json",
                 "eu.europa.ec.eudi.mdl_mdoc",

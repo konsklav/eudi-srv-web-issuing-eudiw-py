@@ -1,0 +1,196 @@
+{
+    "eu.europa.ec.eudi.greek_academic_id_mdoc": {
+        "format": "mso_mdoc",
+        "doctype": "eu.europa.ec.eudi.greek_academic_id.1",
+        "scope": "eu.europa.ec.eudi.greek_academic_id.1",
+        "cryptographic_binding_methods_supported": [
+          "jwk", "cose_key"
+        ],
+        "credential_signing_alg_values_supported": [
+          "ES256"
+        ],
+        "proof_types_supported": {
+          "jwt": {
+            "proof_signing_alg_values_supported": [
+              "ES256"
+            ]
+          },
+          "cwt": {
+            "proof_signing_alg_values_supported": [
+              "ES256"
+            ],
+            "proof_alg_values_supported": [
+              -7
+            ],
+            "proof_crv_values_supported": [
+              1
+            ]
+          }
+        },
+        "display": [
+          {
+            "name": "Greek Academic ID",
+            "locale": "en",
+            "logo": {
+              "url": "https://examplestate.com/public/pid.png",
+              "alt_text": "A square figure of an Academic ID"
+            }
+          }
+        ],
+        "claims": {
+          "eu.europa.ec.eudi.greek_academic_id.1": {
+            "given_name": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Given Name",
+                  "locale": "en"              }
+              ]
+            },
+            "family_name": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Family Name",
+                  "locale": "en"              }
+              ]
+            },
+            "given_name_gr": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Given Name in Greek",
+                  "locale": "en"              }
+              ]
+            },
+            "family_name_gr": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Family Name in Greek",
+                  "locale": "en"              }
+              ]
+            },
+            "place_of_residence": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Place of Residence",
+                  "locale": "en"
+                }
+              ]
+            },
+            "student_type": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Student Type (Undergraduate, Postgraduate)",
+                  "locale": "en"              }
+              ]
+            },
+            "department": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Department",
+                  "locale": "en"              }
+              ]
+            },
+            "academic_institution_name": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Academic Institution Name",
+                  "locale": "en"              }
+              ]
+            },
+            "academic_institution_location": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Academic Institution Location",
+                  "locale": "en"              }
+              ]
+            },
+            "student_registration_number": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Student Registration Number",
+                  "locale": "en"              }
+              ]
+            },
+            "document_number": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "ID number",
+                  "locale": "en"            }
+              ]
+            },
+            "issuing_authority": {
+              "mandatory": true,
+              "source":"issuer",
+              "display": [
+                {
+                  "name": "Issuing authority",
+                  "locale": "en"
+                }
+              ]
+            },
+            "issuance_date": {
+              "mandatory": true,
+              "source":"issuer",
+              "display": [
+                {
+                  "name": "Issuance Date",
+                  "locale": "en"
+                }
+              ]
+            },
+            "expiry_date": {
+              "mandatory": true,
+              "source":"issuer",
+              "display": [
+                {
+                  "name": "Expiry Date",
+                  "locale": "en"
+                }
+              ]
+            },
+            "portrait": {
+              "mandatory": true,
+              "value_type":"jpeg",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Portrait of Academic ID holder",
+                  "locale": "en"            }
+              ]
+            }
+          }
+        }
+      }
+    }

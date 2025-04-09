@@ -90,16 +90,6 @@
                 }
               ]
             },
-            "registration_number": {
-              "mandatory": true,
-              "value_type":"string",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Student Registration Number",
-                  "locale": "en"              }
-              ]
-            },
             "student_type": {
               "mandatory": true,
               "value_type":"string",
@@ -117,6 +107,36 @@
               "display": [
                 {
                   "name": "Department",
+                  "locale": "en"              }
+              ]
+            },
+            "academic_institution_name": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Academic Institution Name",
+                  "locale": "en"              }
+              ]
+            },
+            "academic_institution_location": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Academic Institution Location",
+                  "locale": "en"              }
+              ]
+            },
+            "student_registration_number": {
+              "mandatory": true,
+              "value_type":"string",
+              "source":"user",
+              "display": [
+                {
+                  "name": "Student Registration Number",
                   "locale": "en"              }
               ]
             },
@@ -168,36 +188,6 @@
                 {
                   "name": "Portrait of Academic ID holder",
                   "locale": "en"            }
-              ]
-            },
-            "academic_institution_name": {
-              "mandatory": true,
-              "value_type":"string",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Academic Institution Name",
-                  "locale": "en"              }
-              ]
-            },
-            "academic_institution_logo": {
-              "mandatory": true,
-              "value_type":"jpeg",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Logo of the Academic Institution",
-                  "locale": "en"            }
-              ]
-            },
-            "academic_institution_location": {
-              "mandatory": true,
-              "value_type":"string",
-              "source":"user",
-              "display": [
-                {
-                  "name": "Academic Institution Location",
-                  "locale": "en"              }
               ]
             }
           }

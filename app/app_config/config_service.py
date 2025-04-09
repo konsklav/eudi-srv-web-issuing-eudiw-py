@@ -37,7 +37,7 @@ class ConfService:
     # service_url = os.getenv("SERVICE_URL", "https://issuer.eudiw.dev/")
     # service_url = "https://127.0.0.1:5000/"
     #service_url = "https://localhost:5000/"
-    service_url = "https://similarly-up-raven.ngrok-free.app"
+    service_url = "https://similarly-up-raven.ngrok-free.app/"
     # service_url = os.getenv("SERVICE_URL","https://dev.issuer.eudiw.dev/")
 
     wallet_test_url = "https://tester.issuer.eudiw.dev/"

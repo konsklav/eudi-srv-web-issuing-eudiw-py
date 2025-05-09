@@ -143,6 +143,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# macOS Stuff
+.DS_Store
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -203,3 +206,7 @@ app/tests/output.xml
 app/tests/output.xml
 app/tests/report.html
 log
+
+# jwks - (Change after local deployment)
+app/private/cookie_jwks.json
+app/static/jwks.json

@@ -20,7 +20,7 @@
 Configuration of service secrets
 """
 
-flask_secret_key = "secret_here"
+flask_secret_key = "FLASK_SECRET_KEY"   # I changed this!
 
 # eIDAS secret connector request
 # Defined in eIDAS node service file specificConnector/specificCommunicationDefinitionConnector.xml,

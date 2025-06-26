@@ -32,166 +32,180 @@
         "name": "Greek Academic ID",
         "locale": "en",
         "logo": {
-          "url": "https://examplestate.com/public/pid.png",
+          "uri": "https://examplestate.com/public/pid.png",
           "alt_text": "A square figure of an Academic ID"
         }
       }
     ],
-    "claims": {
-      "eu.europa.ec.eudi.greek_academic_id.1": {
-        "given_name": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Given Name",
-              "locale": "en"              }
-          ]
-        },
-        "family_name": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Family Name",
-              "locale": "en"              }
-          ]
-        },
-        "given_name_gr": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Given Name in Greek",
-              "locale": "en"              }
-          ]
-        },
-        "family_name_gr": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Family Name in Greek",
-              "locale": "en"              }
-          ]
-        },
-        "place_of_residence": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Place of Residence",
-              "locale": "en"
-            }
-          ]
-        },
-        "student_type": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Student Type (Undergraduate, Postgraduate)",
-              "locale": "en"              }
-          ]
-        },
-        "department": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Department",
-              "locale": "en"              }
-          ]
-        },
-        "academic_institution_name": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Academic Institution Name",
-              "locale": "en"              }
-          ]
-        },
-        "academic_institution_location": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Academic Institution Location",
-              "locale": "en"              }
-          ]
-        },
-        "student_registration_number": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "Student Registration Number",
-              "locale": "en"              }
-          ]
-        },
-        "document_number": {
-          "mandatory": true,
-          "value_type":"string",
-          "source":"user",
-          "display": [
-            {
-              "name": "ID number",
-              "locale": "en"            }
-          ]
-        },
-        "issuing_authority": {
-          "mandatory": true,
-          "source":"issuer",
-          "display": [
-            {
-              "name": "Issuing authority",
-              "locale": "en"
-            }
-          ]
-        },
-        "issuance_date": {
-          "mandatory": true,
-          "source":"issuer",
-          "display": [
-            {
-              "name": "Issuance Date",
-              "locale": "en"
-            }
-          ]
-        },
-        "expiry_date": {
-          "mandatory": true,
-          "source":"issuer",
-          "display": [
-            {
-              "name": "Expiry Date",
-              "locale": "en"
-            }
-          ]
-        },
-        "portrait": {
-          "mandatory": true,
-          "value_type":"jpeg",
-          "source":"user",
-          "display": [
-            {
-              "name": "Portrait of Academic ID holder",
-              "locale": "en"            
-            }
-          ]
-        }
+    "claims": [
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "given_name"],
+        "mandatory": true,
+        "value_type": "string",
+        "source": "user",
+        "display": [
+          {
+            "name": "Given Name",
+            "locale": "en"
+          }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "family_name"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Family Name",
+            "locale": "en"              }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "given_name_gr"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Given Name in Greek",
+            "locale": "en"              }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "family_name_gr"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Family Name in Greek",
+            "locale": "en"              }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "place_of_residence"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Place of Residence",
+            "locale": "en"
+          }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "student_type"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Student Type (Undergraduate, Postgraduate)",
+            "locale": "en"              }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "department"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Department",
+            "locale": "en"              }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "academic_institution_name"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Academic Institution Name",
+            "locale": "en"              }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "academic_institution_location"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Academic Institution Location",
+            "locale": "en"              }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "student_registration_number"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "Student Registration Number",
+            "locale": "en"              }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "document_number"],
+        "mandatory": true,
+        "value_type":"string",
+        "source":"user",
+        "display": [
+          {
+            "name": "ID number",
+            "locale": "en"            }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "issuing_authority"],
+        "mandatory": true,
+        "source":"issuer",
+        "display": [
+          {
+            "name": "Issuing authority",
+            "locale": "en"
+          }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "issuance_date"],
+        "mandatory": true,
+        "source":"issuer",
+        "display": [
+          {
+            "name": "Issuance Date",
+            "locale": "en"
+          }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "expiry_date"],
+        "mandatory": true,
+        "source":"issuer",
+        "display": [
+          {
+            "name": "Expiry Date",
+            "locale": "en"
+          }
+        ]
+      },
+      {
+        "path": ["eu.europa.ec.eudi.greek_academic_id.1", "portrait"],
+        "mandatory": true,
+        "value_type":"jpeg",
+        "source":"user",
+        "display": [
+          {
+            "name": "Portrait of Academic ID holder",
+            "locale": "en"            
+          }
+        ]
       }
-    }
+    ]
   }
 }

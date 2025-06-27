@@ -4,7 +4,8 @@
     "doctype": "eu.europa.ec.eudi.greek_academic_id.1",
     "scope": "eu.europa.ec.eudi.greek_academic_id_mdoc",
     "cryptographic_binding_methods_supported": [
-      "jwk", "cose_key"
+      "jwk",
+      "cose_key"
     ],
     "credential_signing_alg_values_supported": [
       "ES256"
